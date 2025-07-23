@@ -11,4 +11,6 @@ public interface TaskRepository extends JpaRepository<Task, Long>{
     List<Task> findAllByUserAndCompleted(User user, Boolean completed);
 
     List<Task> findAllByUserOrderByLimitDateAsc(User user);
+
+    Long id(Long id);
 }
